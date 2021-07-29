@@ -1,0 +1,535 @@
+<html>
+  <head>
+    <style>
+      body {
+        min-height: 29.7cm;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 21cm;
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 5mm;
+      }
+
+      .summary {
+        flex: 2;
+        border-style: groove;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        border-width: thin;
+        border-color: white;
+      }
+
+      .summary ul {
+        padding-inline-start: 5mm;
+      }
+
+      .summary li {
+        margin-top: 2mm;
+      }
+
+      .details {
+        flex: 3;
+      }
+
+      .summary,
+      .details {
+        padding: 5mm;
+      }
+
+      .section {
+        margin: 5mm 0mm 0mm 5mm;
+        line-height: 1.2em;
+      }
+
+      .project {
+        border-style: groove;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-width: thin;
+        border-color: white;
+        padding-top: 3mm;
+      }
+
+      .label {
+        display: flex;
+        align-items: flex-start;
+        margin: 2mm 0mm 0mm 2mm;
+      }
+
+      .key {
+        flex: 3;
+        text-align: right;
+        padding-right: 1mm;
+      }
+
+      .value {
+        flex: 6;
+        padding-left: 1mm;
+      }
+
+      .value li {
+        margin-left: 4mm;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Vladimir Bogretsov</h1>
+      <p>Software engineer</p>
+    </header>
+    <main>
+      <aside class="summary">
+        <h2>Summary</h2>
+        <ul>
+          <li>
+            10+ years in software development.
+          </li>
+          <li>
+            Leading projects from scratch to successfully being in production.
+          </li>
+          <li>
+            Design and implementation of core and plugin features of a product.
+          </li>
+          <li>
+            Setup and maintain staging and production infrastructure (IaaC).
+          </li>
+          <li>
+            Analyzing performance and memory issues.
+          </li>
+          <li>
+            Multithreading
+          </li>
+          <li>
+            Presale activities: technical solutions preparation and estimation.
+          </li>
+          <li>
+            Team members mentoring.
+          </li>
+        </ul>
+
+        <h3>Education</h3>
+        <div class="section">
+          Belarusian State University
+          <br />
+          2006-2012
+          <br />
+          Master's degree in mathematics
+        </div>
+
+        <h3>Programming languages:</h3>
+        <div class="section">
+          <span>Python, Go, C, C#, Bash</span>
+        </div>
+
+        <h3>Technologies, Platforms, Tools:</h3>
+        <div class="section">
+          <span>
+            Docker, Terraform, Kubernetes, GCP, AWS, IoT, CloudFormation,
+            PostgreSQL, RabbitMQ, Chef, make, cmake, tcpdump, WireShark
+          </span>
+        </div>
+
+        <h3>OSs:</h3>
+        <div class="section">
+          <span>OS X, Linux, Windows</span>
+        </div>
+
+        <h3>Contacts:</h3>
+        <div class="section">
+          <p>
+            email:
+            <a href="mailto:bogrecov@gmail.com">bogrecov@gmail.com</a>
+          </p>
+          <p>phone: +375 (29) 703-08-33</p>
+        </div>
+  
+      </aside>
+
+      <aside class="details">
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <div class="value">
+              Casino slot games. High Load. 700+ bare metal servers.
+            </div>
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">DevOps</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">10 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">06-2020 - these days</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value">
+              GCP, Terraform, Chef, Bare Metal, Kubernetes, MySQL, MongoDB,
+              ClickHouse, Redis, Memcached, RabbitMQ, New Relic, Go
+            </span>
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>Creating new instrastructure in GCP</li>
+              <li>Maintain exisiting infrastructure on Bare Metal</li>
+              <li>Out of hours support based on team rota</li>
+              <li>Creating CI/CD pipelines for infrastructre and applications code</li>
+              <li>Integration with third party systems</li>
+            </ul>
+          </div>
+          <div class="label">
+            <b class="key">Contribution:</b>
+            <ul class="value">
+              <li>
+                Proposed and implemented approach for secure connection to the
+                GKE control plane outside of VPC, no IP whitelisting required
+              </li>
+              <li>
+                Proposed several enhancements to improve overall security level
+              </li>
+              <li>
+                Proposed and implemented solution for load tests. The existing one
+                had limitations of outgoing networking
+              </li>
+              <li>
+                Proposed approach to significantly improove RabbitMQ cluster reliability
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <div class="value">
+              Solution for hosting education materials about how to use comany
+              products. Includes cources and certifications.
+            </div>
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">Team Lead</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">7 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">12-2019 - 06-2020</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value">
+              AWS, Terraform, Python, Celery, PostgreSQL, Django REST, pytest, Docker,
+              JavaScript, WebPack, React/Redux, Material UI.
+            </span>
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>Design and setup project infrastructure, CI/CD pipelines</li>
+              <li>Design frontend/backend architecture</li>
+              <li>Features implementation/stabilization</li>
+              <li>Participate and business requirements clarification</li>
+            </ul>
+          </div>
+          <div class="label">
+            <b class="key">Contribution:</b>
+            <ul class="value">
+              <li>
+                Before starting the project I had no experience in frontend. But
+                the architecture I created allowed a team member to pick up the
+                project and successfully lead it to production.
+              </li>
+              <li>
+                Created instrastructure (AWS) and backend (Python) project templates
+                which was successfully adopted in several projects in the company.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <span class="value">
+              Detecting cracked soft on employees workstations
+            </span>
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">Developer/Researcher</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">4 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">04-2019 - 10-2019</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value">
+              Go, WinAPI, Windows, Linux, OS X, Process Monitor, WireShark
+            </span>
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>Investigate criteria of cracked software</li>
+              <li>Implement detection of cracked software</li>
+            </ul>
+          </div>
+          <div class="label">
+            <b class="key">Contribution:</b>
+            <ul class="value">
+              <li>
+                Successfully solved problem about how to detect cracked
+                Visual Studio and JetBrains products
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <span class="value">Video streaming in hotels</span>
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">Server side developer</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">2 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">05-2019 - 09-2019</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value">
+              Go, Python, C, Terraform, Docker, Azure IoT Hub/Monitor/Blob
+              Storage/AD, Echo Web Framework (Golang), Grafana
+            </span>
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>Design server side architecture</li>
+              <li>Setup server side infrastructure</li>
+              <li>Implement server side components</li>
+              <li>Implement client-server connectivity SDK</li>
+              <li>Business requirements gathering</li>
+            </ul>
+          </div>
+          <div class="label">
+            <b class="key">Contribution:</b>
+            <ul class="value">
+              <li>Project successfully supplied to the customer</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <span class="value">Appliances orders lifecycle automation</span>
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">Team Lead</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">5-6 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">01-2018 - 02-2019</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value">
+              Python, Django REST, pytest, Terraform, Docker, Kubernetes, AWS,
+              PostgreSQL, Redis
+            </span>
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>Staging/Production infrastructure setup and maintanance</li>
+              <li>CI/CD pipelines configuration</li>
+              <li>Feature design, estimation, implementation, stabilization</li>
+              <li>Investigation third party tools and API for integration</li>
+              <li>Team members mentoring</li>
+            </ul>
+          </div>
+          <div class="label">
+            <b class="key">Contribution:</b>
+            <ul class="value">
+              <li>From scratch to successfully being in production for several years</li>
+              <li>Deisnged solution to meet complex business rules when ordering and billing an appliance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <span class="value"
+              >Cloud based routing based on the LISP protocol.</span
+            >
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">Backend Developer</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">3-5 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">01-2016 - 10-2016</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value"
+              >Python, Django, Open Stack, SQL Alchemy, MySQL, Cisco IOS</span
+            >
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>New feature implementation</li>
+              <li>Stabilization</li>
+            </ul>
+          </div>
+          <div class="label">
+            <b class="key">Contribution:</b>
+            <ul class="value">
+              <li>
+                Proposed and implemented solution for large legacy tests to make it easy to manage a test case
+                dependencies, significantly reduced code size in tests
+              </li>
+              <li>
+                Proposed solution for emulating complex networking environment for tests. The solution was based on the UnetLab network emulator.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <span class="value">Solution for collecting, storing, analyzing counters of variuosequipment</span>
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">Developer</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">4 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">03-2014 - 05-2014</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value">C#, Wolfram Mathematica</span>
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>
+                Design and implementation of algorithms for big datasets
+                processing
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="label">
+            <b class="key">Project Description:</b>
+            <span class="value">Solution for migrating email archives between
+              different archiving systems</span>
+          </div>
+          <div class="label">
+            <b class="key">Position:</b>
+            <span class="value">Developer</span>
+          </div>
+          <div class="label">
+            <b class="key">Team Size:</b>
+            <span class="value">10-15 members</span>
+          </div>
+          <div class="label">
+            <b class="key">Duration:</b>
+            <span class="value">01-2011 - 12-2015</span>
+          </div>
+          <div class="label">
+            <b class="key">Stack:</b>
+            <span class="value">C#, WinForms, WPF, Multithreading, MS SQL Server,
+              WinDBG, UML, WireShark, ANTS Performace/Memory profiler</span>
+          </div>
+          <div class="label">
+            <b class="key">Responsibilities:</b>
+            <ul class="value">
+              <li>Feature design, estimation and implementation</li>
+              <li>Writing technical specifications</li>
+              <li>Stabilization</li>
+              <li>Solving support cases</li>
+              <li>Reverse engeneering of an email archiving system</li>
+              <li>Team members mentoring</li>
+            </ul>
+          </div>
+          <div class="label">
+            <b class="key">Contribution:</b>
+            <ul class="value">
+              <li>
+                Designed and integrated solution for runtime threads count adjustment
+              </li>
+              <li>
+                Proposed solution for mocking email acrhiving systems for integration tests
+              </li>
+              <li>
+                Created several tools useful in support activities, the tools adopted by team members
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
+
